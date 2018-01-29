@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Welcome to HOME page</h1>
+    <% if(user){ %>
+    <a href="/auth/logout">
+        <h2>Logout </h2>
+    </a>
+    <% } else{ %>
+    <a href="/auth/login">
+        <h2>Login</h2>
+    </a>
+    <% } %>
+    <a href="/">
+        <h2>Home Page</h2>
+    </a>
+    <a href="/profile">
+        <h2>Profile</h2>
+    </a>
+</body>
+
+</html>
